@@ -1,0 +1,171 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: #ffffff;
+  overflow-x: hidden;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: 700;
+  color: #0066ff;
+  text-decoration: none;
+}
+
+.logo span {
+  color: #000000;
+}
+
+.nav-link {
+  font-size: 16px;
+  color: #000000 !important;
+  font-weight: 500;
+  transition: color 0.2s ease-in-out;
+}
+
+.nav-link:hover,
+.nav-link.active {
+  color: #0066ff !important;
+}
+
+.icon-links {
+  display: flex;
+  justify-content: flex-end;
+  gap: 20px;
+  padding: 20px;
+  font-size: 20px;
+}
+
+.icon-links span {
+  font-size: 24px;
+  cursor: pointer;
+  color: #333;
+  transition: color 0.2s;
+}
+
+.icon-links span:hover {
+  color: #0066ff;
+}
+
+.section-title {
+  font-size: 28px;
+  font-weight: 700;
+  color: #222;
+}
+
+.category-card {
+  background-color: #f3f3f3;
+  border-radius: 8px;
+  border: 1px solid transparent;
+  transition: all 0.2s ease-in-out;
+}
+
+.category-card:hover {
+  border-color: #0066ff;
+  background-color: #eef4ff;
+}
+
+.category-card img {
+  max-height: 80px;
+  object-fit: contain;
+}
+
+.product-card {
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+}
+
+.product-card img {
+  max-height: 160px;
+  object-fit: contain;
+}
+
+.product-heading {
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 1.4;
+  color: #222;
+  height: 42px;
+  overflow: hidden;
+}
+
+.price-text {
+  color: #0066ff;
+  font-weight: 700;
+  margin-top: 10px;
+}
+
+.promo-card {
+  min-height: 180px;
+}
+
+.promo-text button {
+  background-color: #0056cc;
+  border: none;
+  transition: background 0.2s;
+}
+
+.promo-text button:hover {
+  background-color: #003c97;
+  color: #ffffff;
+  padding: 5px 10px;
+  margin: 10px;
+  border-radius: 5px;
+}
+
+.promo-img {
+  max-height: 130px;
+  width: auto;
+  object-fit: contain;
+}
+
+.features-bar {
+  border: 1px solid #e0e0e0;
+}
+
+.footer-bg {
+  background-color: #00388d;
+  color: #ffffff;
+  border: 2px #3700ff solid;
+}
+
+.footer-heading {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 15px;
+  letter-spacing: 0.5px;
+}
+
+.social-logos img {
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+
+.social-logos img:hover {
+  opacity: 0.8;
+}
+
+@media (max-width: 576px) {
+  .section-title {
+    font-size: 22px;
+  }
+
+  .promo-card {
+    text-align: center;
+  }
+}
